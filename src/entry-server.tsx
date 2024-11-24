@@ -1,8 +1,5 @@
 // @refresh reload
 import { StartServer, createHandler } from "@solidjs/start/server";
-import { server } from "./mocks/node";
-
-server.listen();
 
 export default createHandler(() => (
 	<StartServer
