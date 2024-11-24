@@ -1,4 +1,3 @@
-import "server-only";
 import crypto from "node:crypto";
 import { getSession as baseGetSession } from "@auth/solid-start";
 import { provider } from "./provider";
