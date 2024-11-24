@@ -6,7 +6,10 @@
 		"build": "vinxi build",
 		"start": "vinxi start",
 		"version": "vinxi version",
-		"fmt": "biome check --write"
+		"test": "vitest",
+		"fmt": "biome check --write",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
 		"@auth/core": "^0.37.4",
@@ -23,7 +26,22 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"msw": "^2.6.6"
+		"@chromatic-com/storybook": "3.2.2",
+		"@fast-check/vitest": "^0.1.4",
+		"@solidjs/testing-library": "^0.8.10",
+		"@storybook/addon-essentials": "8.4.5",
+		"@storybook/addon-interactions": "8.4.5",
+		"@storybook/blocks": "8.4.5",
+		"@storybook/test": "8.4.5",
+		"@testing-library/jest-dom": "^6.6.3",
+		"@testing-library/user-event": "^14.5.2",
+		"jsdom": "^25.0.1",
+		"msw": "^2.6.6",
+		"storybook": "8.4.5",
+		"storybook-solidjs": "1.0.0-beta.6",
+		"storybook-solidjs-vite": "1.0.0-beta.6",
+		"vite-plugin-solid": "^2.10.2",
+		"vitest": "^2.1.5"
 	},
 	"msw": {
 		"workerDirectory": ["public"]
