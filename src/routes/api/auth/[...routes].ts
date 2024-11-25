@@ -2,8 +2,10 @@ import crypto from "node:crypto";
 import { SolidAuth } from "@auth/solid-start";
 import { provider } from "~/lib/auth/provider";
 
+if (process.env.NODE_ENV === "development") {
 // authjs内部でcryptoを使っているため、globalに代入する
 global.crypto = crypto as never;
+}
 
 declare module "@auth/core/jwt" {
 	interface JWT {
