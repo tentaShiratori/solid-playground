@@ -16,21 +16,29 @@
 	},
 	"dependencies": {
 		"@apollo/client": "^3.11.10",
+		"@ark-ui/solid": "^4.5.1",
 		"@auth/core": "^0.37.4",
 		"@auth/solid-start": "^0.15.4",
 		"@graphql-tools/graphql-file-loader": "^8.0.4",
 		"@graphql-tools/load": "^8.0.5",
+		"@kobalte/core": "^0.13.7",
 		"@libsql/client": "^0.14.0",
 		"@merged/solid-apollo": "^1.7.1",
 		"@modular-forms/solid": "^0.25.0",
 		"@solidjs/meta": "^0.29.4",
 		"@solidjs/router": "^0.15.0",
 		"@solidjs/start": "^1.0.10",
+		"@suid/icons-material": "^0.8.1",
+		"@suid/material": "^0.18.0",
 		"@urql/solid": "^0.1.1",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
 		"drizzle-orm": "^0.36.4",
 		"graphql": "^16.9.0",
 		"immer": "^10.1.1",
 		"solid-js": "^1.9.2",
+		"tailwind-merge": "^2.5.5",
+		"tailwindcss-animate": "^1.0.7",
 		"vinxi": "^0.4.3"
 	},
 	"engines": {
@@ -49,6 +57,7 @@
 		"@storybook/addon-interactions": "8.4.5",
 		"@storybook/blocks": "8.4.5",
 		"@storybook/test": "8.4.5",
+		"@suid/vite-plugin": "^0.3.1",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/user-event": "^14.5.2",
 		"dotenv": "^16.4.5",
@@ -64,6 +73,8 @@
 		"vitest": "^2.1.5"
 	},
 	"msw": {
-		"workerDirectory": ["public"]
+		"workerDirectory": [
+			"public"
+		]
 	}
 }
