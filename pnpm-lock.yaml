@@ -34,7 +34,7 @@ dependencies:
     version: 1.7.1(@apollo/client@3.11.10)(solid-js@1.9.3)
   '@modular-forms/solid':
     specifier: ^0.25.0
-    version: 0.25.0(solid-js@1.9.3)(typescript@5.6.3)
+    version: 0.25.0(solid-js@1.9.3)(typescript@5.7.2)
   '@solidjs/meta':
     specifier: ^0.29.4
     version: 0.29.4(solid-js@1.9.3)
@@ -62,9 +62,6 @@ dependencies:
   drizzle-orm:
     specifier: ^0.36.4
     version: 0.36.4(@libsql/client@0.14.0)(@types/react@18.3.12)(react@18.3.1)
-  graphql:
-    specifier: ^16.9.0
-    version: 16.9.0
   immer:
     specifier: ^10.1.1
     version: 10.1.1
@@ -79,7 +76,7 @@ dependencies:
     version: 1.0.7
   vinxi:
     specifier: ^0.4.3
-    version: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.6.3)
+    version: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.7.2)
 
 devDependencies:
   '@biomejs/biome':
@@ -93,7 +90,10 @@ devDependencies:
     version: 0.1.4(vitest@2.1.5)
   '@graphql-codegen/cli':
     specifier: ^5.0.3
-    version: 5.0.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.6.3)
+    version: 5.0.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.7.2)
+  '@graphql-codegen/client-preset':
+    specifier: ^4.5.1
+    version: 4.5.1(graphql@16.9.0)
   '@graphql-codegen/graphql-modules-preset':
     specifier: ^4.0.12
     version: 4.0.12(graphql@16.9.0)
@@ -103,6 +103,9 @@ devDependencies:
   '@graphql-codegen/typescript-resolvers':
     specifier: ^4.4.1
     version: 4.4.1(graphql@16.9.0)
+  '@graphql-typed-document-node/core':
+    specifier: ^3.2.0
+    version: 3.2.0(graphql@16.9.0)
   '@solidjs/testing-library':
     specifier: ^0.8.10
     version: 0.8.10(@solidjs/router@0.15.1)(solid-js@1.9.3)
@@ -133,12 +136,15 @@ devDependencies:
   drizzle-kit:
     specifier: ^0.28.1
     version: 0.28.1
+  graphql:
+    specifier: ^16.9.0
+    version: 16.9.0
   jsdom:
     specifier: ^25.0.1
     version: 25.0.1
   msw:
     specifier: ^2.6.6
-    version: 2.6.6(@types/node@22.9.1)(typescript@5.6.3)
+    version: 2.6.6(@types/node@22.9.1)(typescript@5.7.2)
   solid-devtools:
     specifier: ^0.30.1
     version: 0.30.1(solid-js@1.9.3)(solid-start@0.2.32)(vite@5.4.11)
@@ -154,6 +160,9 @@ devDependencies:
   tsx:
     specifier: ^4.19.2
     version: 4.19.2
+  typescript:
+    specifier: ^5.7.2
+    version: 5.7.2
   vite-plugin-solid:
     specifier: ^2.10.2
     version: 2.10.2(@testing-library/jest-dom@6.6.3)(solid-js@1.9.3)(vite@5.4.11)
@@ -3069,7 +3078,7 @@ packages:
       tslib: 2.6.3
     dev: true
 
-  /@graphql-codegen/cli@5.0.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.6.3):
+  /@graphql-codegen/cli@5.0.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.7.2):
     resolution: {integrity: sha512-ULpF6Sbu2d7vNEOgBtE9avQp2oMgcPY/QBYcCqk0Xru5fz+ISjcovQX29V7CS7y5wWBRzNLoXwJQGeEyWbl05g==}
     engines: {node: '>=16'}
     hasBin: true
@@ -3098,11 +3107,11 @@ packages:
       '@graphql-tools/utils': 10.6.0(graphql@16.9.0)
       '@whatwg-node/fetch': 0.9.23
       chalk: 4.1.2
-      cosmiconfig: 8.3.6(typescript@5.6.3)
+      cosmiconfig: 8.3.6(typescript@5.7.2)
       debounce: 1.2.1
       detect-indent: 6.1.0
       graphql: 16.9.0
-      graphql-config: 5.1.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.6.3)
+      graphql-config: 5.1.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.7.2)
       inquirer: 8.2.6
       is-glob: 4.0.3
       jiti: 1.21.6
@@ -3981,13 +3990,13 @@ packages:
       solid-js: 1.9.3
     dev: false
 
-  /@modular-forms/solid@0.25.0(solid-js@1.9.3)(typescript@5.6.3):
+  /@modular-forms/solid@0.25.0(solid-js@1.9.3)(typescript@5.7.2):
     resolution: {integrity: sha512-fmahVRnYSjQGxWwkuTqOLb4OnleIeu2ROU9iE3Ln7Z4KA829iLgTLQBHE/SIB4ZfkDuS8XLbN8Dn+7m+D6XimA==}
     peerDependencies:
       solid-js: ^1.3.1
     dependencies:
       solid-js: 1.9.3
-      valibot: 1.0.0-beta.8(typescript@5.6.3)
+      valibot: 1.0.0-beta.8(typescript@5.7.2)
     transitivePeerDependencies:
       - typescript
     dev: false
@@ -5436,7 +5445,7 @@ packages:
       magicast: 0.2.11
       recast: 0.23.9
       tslib: 2.8.1
-      vinxi: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.6.3)
+      vinxi: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.7.2)
     dev: false
 
   /@vinxi/server-components@0.4.3(vinxi@0.4.3):
@@ -5451,7 +5460,7 @@ packages:
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
-      vinxi: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.6.3)
+      vinxi: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.7.2)
     dev: false
 
   /@vinxi/server-functions@0.4.3(vinxi@0.4.3):
@@ -5466,7 +5475,7 @@ packages:
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
-      vinxi: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.6.3)
+      vinxi: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.7.2)
     dev: false
 
   /@vitest/expect@2.0.5:
@@ -5501,7 +5510,7 @@ packages:
       '@vitest/spy': 2.1.5
       estree-walker: 3.0.3
       magic-string: 0.30.13
-      msw: 2.6.6(@types/node@22.9.1)(typescript@5.6.3)
+      msw: 2.6.6(@types/node@22.9.1)(typescript@5.7.2)
       vite: 5.4.11(@types/node@22.9.1)
     dev: true
 
@@ -7149,7 +7158,7 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: false
 
-  /cosmiconfig@8.3.6(typescript@5.6.3):
+  /cosmiconfig@8.3.6(typescript@5.7.2):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -7162,7 +7171,7 @@ packages:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
-      typescript: 5.6.3
+      typescript: 5.7.2
     dev: true
 
   /crc-32@1.2.2:
@@ -8345,7 +8354,7 @@ packages:
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  /graphql-config@5.1.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.6.3):
+  /graphql-config@5.1.3(@types/node@22.9.1)(graphql@16.9.0)(typescript@5.7.2):
     resolution: {integrity: sha512-RBhejsPjrNSuwtckRlilWzLVt2j8itl74W9Gke1KejDTz7oaA5kVd6wRn9zK9TS5mcmIYGxf7zN7a1ORMdxp1Q==}
     engines: {node: '>= 16.0.0'}
     peerDependencies:
@@ -8361,7 +8370,7 @@ packages:
       '@graphql-tools/merge': 9.0.10(graphql@16.9.0)
       '@graphql-tools/url-loader': 8.0.16(@types/node@22.9.1)(graphql@16.9.0)
       '@graphql-tools/utils': 10.6.0(graphql@16.9.0)
-      cosmiconfig: 8.3.6(typescript@5.6.3)
+      cosmiconfig: 8.3.6(typescript@5.7.2)
       graphql: 16.9.0
       jiti: 2.4.0
       minimatch: 9.0.5
@@ -9391,7 +9400,7 @@ packages:
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  /msw@2.6.6(@types/node@22.9.1)(typescript@5.6.3):
+  /msw@2.6.6(@types/node@22.9.1)(typescript@5.7.2):
     resolution: {integrity: sha512-npfIIVRHKQX3Lw4aLWX4wBh+lQwpqdZNyJYB5K/+ktK8NhtkdsTxGK7WDrgknozcVyRI7TOqY6yBS9j2FTR+YQ==}
     engines: {node: '>=18'}
     hasBin: true
@@ -9419,7 +9428,7 @@ packages:
       path-to-regexp: 6.3.0
       strict-event-emitter: 0.5.1
       type-fest: 4.27.0
-      typescript: 5.6.3
+      typescript: 5.7.2
       yargs: 17.7.2
     transitivePeerDependencies:
       - '@types/node'
@@ -9447,7 +9456,7 @@ packages:
     resolution: {integrity: sha512-myRT3DiWPHqho5PrJaIRyaMv2kgYf0mUVgBNOYMuCH5Ki1yEiQaf/ZJuQ62nvpc44wL5WDbTX7yGJi1Neevw8w==}
     engines: {node: '>= 0.6'}
 
-  /nitropack@2.10.4(@libsql/client@0.14.0)(drizzle-orm@0.36.4)(typescript@5.6.3):
+  /nitropack@2.10.4(@libsql/client@0.14.0)(drizzle-orm@0.36.4)(typescript@5.7.2):
     resolution: {integrity: sha512-sJiG/MIQlZCVSw2cQrFG1H6mLeSqHlYfFerRjLKz69vUfdu0EL2l0WdOxlQbzJr3mMv/l4cOlCCLzVRzjzzF/g==}
     engines: {node: ^16.11.0 || >=17.0.0}
     hasBin: true
@@ -9504,7 +9513,7 @@ packages:
       node-fetch-native: 1.6.4
       ofetch: 1.4.1
       ohash: 1.1.4
-      openapi-typescript: 7.4.3(typescript@5.6.3)
+      openapi-typescript: 7.4.3(typescript@5.7.2)
       pathe: 1.1.2
       perfect-debounce: 1.0.0
       pkg-types: 1.2.1
@@ -9737,7 +9746,7 @@ packages:
       is-inside-container: 1.0.0
       is-wsl: 2.2.0
 
-  /openapi-typescript@7.4.3(typescript@5.6.3):
+  /openapi-typescript@7.4.3(typescript@5.7.2):
     resolution: {integrity: sha512-xTIjMIIOv9kNhsr8JxaC00ucbIY/6ZwuJPJBZMSh5FA2dicZN5uM805DWVJojXdom8YI4AQTavPDPHMx/3g0vQ==}
     hasBin: true
     peerDependencies:
@@ -9748,7 +9757,7 @@ packages:
       change-case: 5.4.4
       parse-json: 8.1.0
       supports-color: 9.4.0
-      typescript: 5.6.3
+      typescript: 5.7.2
       yargs-parser: 21.1.1
     transitivePeerDependencies:
       - encoding
@@ -11261,8 +11270,8 @@ packages:
     resolution: {integrity: sha512-3IMSWgP7C5KSQqmo1wjhKrwsvXAtF33jO3QY+Uy++ia7hqvgSK6iXbbg5PbDBc1P2ZbNEDgejOrN4YooXvhwCw==}
     engines: {node: '>=16'}
 
-  /typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+  /typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -11549,7 +11558,7 @@ packages:
     hasBin: true
     dev: true
 
-  /valibot@1.0.0-beta.8(typescript@5.6.3):
+  /valibot@1.0.0-beta.8(typescript@5.7.2):
     resolution: {integrity: sha512-OPAwJZtowb0j91b+bd77+ny7D1VVzsCzD7Jl9waLUlMprTsfI9Y3HHbW3hAQD7wKDKHsmGEesuiYWaYvcZL2wg==}
     peerDependencies:
       typescript: '>=5'
@@ -11557,7 +11566,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      typescript: 5.6.3
+      typescript: 5.7.2
     dev: false
 
   /validate-html-nesting@1.2.2:
@@ -11571,7 +11580,7 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  /vinxi@0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.6.3):
+  /vinxi@0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.7.2):
     resolution: {integrity: sha512-RgJz7RWftML5h/qfPsp3QKVc2FSlvV4+HevpE0yEY2j+PS/I2ULjoSsZDXaR8Ks2WYuFFDzQr8yrox7v8aqkng==}
     hasBin: true
     dependencies:
@@ -11595,7 +11604,7 @@ packages:
       hookable: 5.5.3
       http-proxy: 1.18.1
       micromatch: 4.0.8
-      nitropack: 2.10.4(@libsql/client@0.14.0)(drizzle-orm@0.36.4)(typescript@5.6.3)
+      nitropack: 2.10.4(@libsql/client@0.14.0)(drizzle-orm@0.36.4)(typescript@5.7.2)
       node-fetch-native: 1.6.4
       path-to-regexp: 6.3.0
       pathe: 1.1.2

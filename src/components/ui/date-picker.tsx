@@ -1,4 +1,3 @@
-import { cn } from "~/lib/cn";
 import type {
 	DatePickerContentProps,
 	DatePickerControlProps,
@@ -18,6 +17,7 @@ import type {
 import { DatePicker as DatePickerPrimitive } from "@ark-ui/solid/date-picker";
 import type { VoidProps } from "solid-js";
 import { splitProps } from "solid-js";
+import { cn } from "~/lib/cn";
 import { buttonVariants } from "./button";
 
 export const DatePickerLabel = DatePickerPrimitive.Label;

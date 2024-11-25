@@ -8,6 +8,7 @@
 		"version": "vinxi version",
 		"test": "vitest",
 		"fmt": "biome check --write",
+		"gql:client": "graphql-codegen -c ./codegen.client.ts",
 		"gql:server": "graphql-codegen -c ./codegen.server.ts",
 		"db:push": "drizzle-kit push",
 		"db:studio": "drizzle-kit studio",
@@ -34,7 +35,6 @@
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
 		"drizzle-orm": "^0.36.4",
-		"graphql": "^16.9.0",
 		"immer": "^10.1.1",
 		"solid-js": "^1.9.2",
 		"tailwind-merge": "^2.5.5",
@@ -49,9 +49,11 @@
 		"@chromatic-com/storybook": "3.2.2",
 		"@fast-check/vitest": "^0.1.4",
 		"@graphql-codegen/cli": "^5.0.3",
+		"@graphql-codegen/client-preset": "^4.5.1",
 		"@graphql-codegen/graphql-modules-preset": "^4.0.12",
 		"@graphql-codegen/typescript": "^4.1.2",
 		"@graphql-codegen/typescript-resolvers": "^4.4.1",
+		"@graphql-typed-document-node/core": "^3.2.0",
 		"@solidjs/testing-library": "^0.8.10",
 		"@storybook/addon-essentials": "8.4.5",
 		"@storybook/addon-interactions": "8.4.5",
@@ -62,6 +64,7 @@
 		"@testing-library/user-event": "^14.5.2",
 		"dotenv": "^16.4.5",
 		"drizzle-kit": "^0.28.1",
+		"graphql": "^16.9.0",
 		"jsdom": "^25.0.1",
 		"msw": "^2.6.6",
 		"solid-devtools": "^0.30.1",
@@ -69,12 +72,11 @@
 		"storybook-solidjs": "1.0.0-beta.6",
 		"storybook-solidjs-vite": "1.0.0-beta.6",
 		"tsx": "^4.19.2",
+		"typescript": "^5.7.2",
 		"vite-plugin-solid": "^2.10.2",
 		"vitest": "^2.1.5"
 	},
 	"msw": {
-		"workerDirectory": [
-			"public"
-		]
+		"workerDirectory": ["public"]
 	}
 }
