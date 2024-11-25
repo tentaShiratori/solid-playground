@@ -3,10 +3,10 @@ import suidPlugin from "@suid/vite-plugin";
 
 export default defineConfig({
 	middleware: "./src/middleware.ts",
+	server: {
+		esbuild: { options: { target: 'esnext' } },
+	},
 	vite: {
-		build: {
-			target: "esnext",
-		},
 		plugins: [suidPlugin()],
 	},
 });
