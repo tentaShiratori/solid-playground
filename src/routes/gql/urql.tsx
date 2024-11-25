@@ -18,8 +18,8 @@ export default function Page() {
 	const [result] = createQuery({ query: PostQuery, variables: {} });
 	return (
 		<main>
-			<Title>About</Title>
-			<h1>About</h1>
+			<Title>GQL/URQL</Title>
+			<h1>GQL/URQL</h1>
 			<Show when={result.data}>
 				{(d) => {
 					return (

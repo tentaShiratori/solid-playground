@@ -3,15 +3,20 @@ import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 import "./app.css";
-import { Client, Provider, cacheExchange, fetchExchange } from "@urql/solid";
+import {
+	Client as UrqlClient,
+	Provider as UrqlProvider,
+	cacheExchange,
+	fetchExchange,
+} from "@urql/solid";
 
 export default function App() {
-	const client = new Client({
+	const urqlClient = new UrqlClient({
 		url: "http://localhost:3000/api/gql",
 		exchanges: [cacheExchange, fetchExchange],
 	});
 	return (
-		<Provider value={client}>
+		<UrqlProvider value={urqlClient}>
 			<Router
 				root={(props) => (
 					<MetaProvider>
@@ -25,6 +30,6 @@ export default function App() {
 			>
 				<FileRoutes />
 			</Router>
-		</Provider>
+		</UrqlProvider>
 	);
 }
