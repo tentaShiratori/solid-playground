@@ -1,6 +1,6 @@
 import { defineConfig } from "@solidjs/start/config";
 import suidPlugin from "@suid/vite-plugin";
-import devtools from "solid-devtools/vite";
+// import devtools from "solid-devtools/vite";
 
 export default defineConfig({
 	middleware: "./src/middleware.ts",
@@ -10,10 +10,10 @@ export default defineConfig({
 	vite: {
 		plugins: [
 			suidPlugin(),
-			devtools({
-				/* features options - all disabled by default */
-				autoname: true, // e.g. enable autoname
-			}),
+			// devtools({
+			// 	/* features options - all disabled by default */
+			// 	autoname: true, // e.g. enable autoname
+			// }),
 		],
 	},
 });

@@ -1,7 +1,7 @@
 import { MetaProvider, Title } from "@solidjs/meta";
-import { Router } from "@solidjs/router";
+import { A, Route, Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
-import { Suspense } from "solid-js";
+import { Suspense, createResource, lazy } from "solid-js";
 import "./app.css";
 import {
 	Client as UrqlClient,
@@ -9,6 +9,17 @@ import {
 	cacheExchange,
 	fetchExchange,
 } from "@urql/solid";
+
+const fetchUser = async () => {
+	return (await fetch("https://jsonplaceholder.typicode.com/todos/1").then(
+		(response) => response.json(),
+	)) as { userId: number; id: number; title: string; completed: boolean };
+};
+function preloadUser() {
+	const [user] = createResource(fetchUser);
+	return user;
+}
+const User = lazy(() => import("./components/Migrate"));
 
 export default function App() {
 	const urqlClient = new UrqlClient({
@@ -18,17 +29,20 @@ export default function App() {
 	return (
 		<UrqlProvider value={urqlClient}>
 			<Router
+				preload={false}
 				root={(props) => (
 					<MetaProvider>
 						<Title>SolidStart - Basic</Title>
-						<a href="/">Index</a>
-						<a href="/about">About</a>
-						<a href="/auth/signin">SignIn</a>
+						<A href="/">Index</A>
+						<A href="/about">About</A>
+						<A href="/migrate">Migrate</A>
+						<A href="/auth/signin">SignIn</A>
 						<Suspense>{props.children}</Suspense>
 					</MetaProvider>
 				)}
 			>
 				<FileRoutes />
+				<Route path="/migrate/:id?" component={User} preload={preloadUser} />
 			</Router>
 		</UrqlProvider>
 	);
