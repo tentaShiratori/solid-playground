@@ -68,6 +68,9 @@ dependencies:
   tailwindcss-animate:
     specifier: ^1.0.7
     version: 1.0.7(tailwindcss@3.4.15)
+  valibot:
+    specifier: 1.0.0-beta.8
+    version: 1.0.0-beta.8(typescript@5.7.2)
   vinxi:
     specifier: ^0.4.3
     version: 0.4.3(@libsql/client@0.14.0)(@types/node@22.9.1)(drizzle-orm@0.36.4)(typescript@5.7.2)
@@ -4947,13 +4950,13 @@ packages:
       ts-dedent: 2.2.0
     dev: true
 
-  /@storybook/builder-vite@8.5.0-alpha.10(storybook@8.4.5)(vite@5.4.11):
-    resolution: {integrity: sha512-QnAaY/DJCQRaUY0naOIbNTi+q3bYiQOhh6tV+P6W8vCXCSTKaQWSnmKbTrL+1AEDl03H0z1rKg5TVZViblCbgQ==}
+  /@storybook/builder-vite@8.5.0-alpha.11(storybook@8.4.5)(vite@5.4.11):
+    resolution: {integrity: sha512-AX5GCyd1Mr7iAAlDjO7heAY9SW6fcN8t86+uSpKpzHWkCFoX3uqcYL9XTfwP9FG7zWAOtbunkdbvNdNoN25znQ==}
     peerDependencies:
-      storybook: ^8.5.0-alpha.10
-      vite: ^4.0.0 || ^5.0.0
+      storybook: ^8.5.0-alpha.11
+      vite: ^4.0.0 || ^5.0.0 || ^6.0.0
     dependencies:
-      '@storybook/csf-plugin': 8.5.0-alpha.10(storybook@8.4.5)
+      '@storybook/csf-plugin': 8.5.0-alpha.11(storybook@8.4.5)
       browser-assert: 1.2.1
       storybook: 8.4.5
       ts-dedent: 2.2.0
@@ -4994,10 +4997,10 @@ packages:
       unplugin: 1.16.0
     dev: true
 
-  /@storybook/csf-plugin@8.5.0-alpha.10(storybook@8.4.5):
-    resolution: {integrity: sha512-He8y7nA9r7zNHHEU1LcxdF4S1Y3/Xi7MxlwbvPuDg3gbwkoRA5XXRxwcXQYfLfynlWmJdfcbI53qPI4HrsZxWA==}
+  /@storybook/csf-plugin@8.5.0-alpha.11(storybook@8.4.5):
+    resolution: {integrity: sha512-1WBNdgvM+iGnP7f5H/rn1860XbpXASoVHHWNDPWQQRFBJb4N2pGCYsnaW2PsS8hvCQLLfwp5AtLkAsRcfBmfPg==}
     peerDependencies:
-      storybook: ^8.5.0-alpha.10
+      storybook: ^8.5.0-alpha.11
     dependencies:
       storybook: 8.4.5
       unplugin: 1.16.0
@@ -10915,7 +10918,7 @@ packages:
     resolution: {integrity: sha512-+gggXbzmM+p1dA5EdvlfzMPzIB6Nar1WAzDND63wJeDfqHfpL+yYZqewEJm5woLhMLCqhBIMjfei/TXgjVDJXg==}
     engines: {node: '>=18'}
     dependencies:
-      '@storybook/builder-vite': 8.5.0-alpha.10(storybook@8.4.5)(vite@5.4.11)
+      '@storybook/builder-vite': 8.5.0-alpha.11(storybook@8.4.5)(vite@5.4.11)
       magic-string: 0.30.13
       vite-plugin-solid: 2.10.2(@testing-library/jest-dom@6.6.3)(solid-js@1.9.3)(vite@5.4.11)
     transitivePeerDependencies:
