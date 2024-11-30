@@ -1,8 +1,8 @@
 import { authMiddleware } from "@solid-mediakit/auth";
+import { redirect } from "@solidjs/router";
 import { createMiddleware } from "@solidjs/start/middleware";
 // import { getSession } from "~/lib/auth/session";
 import { authOption } from "./lib/auth/option";
-import { redirect } from "@solidjs/router";
 
 // export default createMiddleware({
 // 	onRequest: [
@@ -19,7 +19,7 @@ import { redirect } from "@solidjs/router";
 // });
 
 export default createMiddleware({
-  onRequest: [
-    authMiddleware(true, authOption), // The session will always be prefetched
-  ],
+	onRequest: [
+		authMiddleware(true, authOption), // The session will always be prefetched
+	],
 });
