@@ -24,6 +24,7 @@
 		"@kobalte/core": "^0.13.7",
 		"@libsql/client": "^0.14.0",
 		"@modular-forms/solid": "^0.25.0",
+		"@solid-mediakit/auth": "^3.1.2",
 		"@solidjs/meta": "^0.29.4",
 		"@solidjs/router": "^0.15.0",
 		"@solidjs/start": "^1.0.10",
@@ -79,6 +80,8 @@
 		"vitest": "^2.1.5"
 	},
 	"msw": {
-		"workerDirectory": ["public"]
+		"workerDirectory": [
+			"public"
+		]
 	}
 }

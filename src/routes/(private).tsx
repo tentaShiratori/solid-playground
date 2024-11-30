@@ -1,10 +1,11 @@
 import type { RouteSectionProps } from "@solidjs/router";
+import { protectedRoute } from "~/components/protectedRoute";
 
-export default function PrivateLayout(props: RouteSectionProps) {
-	return (
-		<div>
-			<div>private</div>
-			{props.children}
-		</div>
-	);
-}
+export default protectedRoute<RouteSectionProps>(function PrivateLayout(props) {
+  return (
+    <div>
+      <div>private</div>
+      {props.children}
+    </div>
+  );
+});

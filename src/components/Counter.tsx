@@ -17,6 +17,7 @@ export default function Counter() {
 	);
 }
 
+// この書き方だとcountの更新のたびに再レンダリングが走る
 // function MyComp(props) {
 //   return () => {
 // 	console.log("MyComp")
