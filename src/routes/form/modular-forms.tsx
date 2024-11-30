@@ -20,7 +20,9 @@ const SpecialSchema = v.object({
 
 type SpecialForm = v.InferInput<typeof SpecialSchema>;
 
-const submit = action(async (e)=>{console.log(e)},"submit");
+const submit = action(async (e) => {
+	console.log(e);
+}, "submit");
 export default function Page() {
 	const [form, { Form, Field, FieldArray }] = createForm<SpecialForm>({
 		initialValues: { number: 0 },
@@ -32,15 +34,20 @@ export default function Page() {
 	return (
 		<div>
 			<h1>Modular Forms</h1>
-			<Form
-            action={submit}
-            method="post"
-			>
+			<Form action={submit} method="post">
 				<Field name="number" type="number">
 					{(field, props) => <input {...props} type="number" />}
 				</Field>
 				<Field name="range" type="number">
-					{(field, props) => <input {...props} type="range" />}
+					{(field, props) => (
+						<input
+							{...props}
+							type="range"
+							onChange={(e) => {
+								e.currentTarget;
+							}}
+						/>
+					)}
 				</Field>
 				<FieldArray name="checkbox.array">
 					{(fieldArray) => (

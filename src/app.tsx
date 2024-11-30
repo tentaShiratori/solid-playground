@@ -36,6 +36,7 @@ export default function App() {
 						<A href="/">Index</A>
 						<A href="/about">About</A>
 						<A href="/migrate">Migrate</A>
+						<A href="/props">Props</A>
 						<A href="/auth/signin">SignIn</A>
 						<Suspense>{props.children}</Suspense>
 					</MetaProvider>

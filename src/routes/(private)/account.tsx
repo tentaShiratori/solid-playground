@@ -1,13 +1,9 @@
 import type { Session } from "@auth/solid-start";
-import { createAsync } from "@solidjs/router";
-import { Show, createEffect, createSignal, onMount } from "solid-js";
-import { fetchSession } from "~/lib/auth/client";
+import { Show, createEffect, createResource } from "solid-js";
+import { getSession } from "~/lib/auth/session";
 
 export default function Page() {
-	const [session, setSession] = createSignal<Session | null>(null);
-	onMount(async () => {
-		setSession(await fetchSession());
-	});
+	const [session] = createResource<Session | null>(getSession);
 	createEffect(() => {
 		console.log(session());
 	});
