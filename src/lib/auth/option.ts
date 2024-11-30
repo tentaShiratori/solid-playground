@@ -27,7 +27,7 @@ const auth0 = Auth0({
 });
 
 export const authOption: SolidAuthConfig = {
-  basePath: import.meta.env.VITE_AUTH_PATH,
+  basePath: process.env.VITE_AUTH_PATH,
   providers: [auth0],
   callbacks: {
     async jwt({ token, account }) {
