@@ -7,6 +7,7 @@
 		"start": "vinxi start",
 		"version": "vinxi version",
 		"test": "vitest",
+		"coverage": "vitest run --coverage",
 		"fmt": "biome check --write",
 		"gql:client": "graphql-codegen -c ./codegen.client.ts",
 		"gql:server": "graphql-codegen -c ./codegen.server.ts",
@@ -34,6 +35,7 @@
 		"clsx": "^2.1.1",
 		"drizzle-orm": "^0.36.4",
 		"immer": "^10.1.1",
+		"msw-storybook-addon": "^2.0.4",
 		"solid-js": "^1.9.3",
 		"tailwind-merge": "^2.5.5",
 		"tailwindcss-animate": "^1.0.7",
@@ -61,6 +63,7 @@
 		"@suid/vite-plugin": "^0.3.1",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/user-event": "^14.5.2",
+		"@vitest/coverage-v8": "^2.1.6",
 		"autoprefixer": "^10.4.20",
 		"dotenv": "^16.4.5",
 		"drizzle-kit": "^0.28.1",
@@ -79,6 +82,8 @@
 		"vitest": "^2.1.5"
 	},
 	"msw": {
-		"workerDirectory": ["public"]
+		"workerDirectory": [
+			"public"
+		]
 	}
 }
