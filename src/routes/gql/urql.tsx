@@ -15,32 +15,32 @@ const PostQuery = graphql(`
 		}
 	}`);
 export default function Page() {
-	const [result] = createQuery({ query: PostQuery, variables: {} });
-	return (
-		<main>
-			<Title>GQL/URQL</Title>
-			<h1>GQL/URQL</h1>
-			<Show when={result.data}>
-				{(d) => {
-					return (
-						<div>
-							<Index
-								each={d().posts?.filter((p) => p != null)}
-								fallback={<div>Loading...</div>}
-							>
-								{(post) => (
-									<div>
-										<h2>{post().title}</h2>
-										<p>
-											{post().author?.firstName} {post().author?.lastName}
-										</p>
-									</div>
-								)}
-							</Index>
-						</div>
-					);
-				}}
-			</Show>
-		</main>
-	);
+  const [result] = createQuery({ query: PostQuery, variables: {} });
+  return (
+    <main>
+      <Title>GQL/URQL</Title>
+      <h1>GQL/URQL</h1>
+      <Show when={result.data}>
+        {(d) => {
+          return (
+            <div>
+              <Index
+                each={d().posts?.filter((p) => p != null)}
+                fallback={<div>Loading...</div>}
+              >
+                {(post) => (
+                  <div>
+                    <h2>{post().title}</h2>
+                    <p>
+                      {post().author?.firstName} {post().author?.lastName}
+                    </p>
+                  </div>
+                )}
+              </Index>
+            </div>
+          );
+        }}
+      </Show>
+    </main>
+  );
 }

@@ -1,11 +1,11 @@
 import { server } from "./msw";
 
 beforeAll(() => {
-	server.listen();
+  server.listen();
 });
 afterEach(async () => {
-	server.resetHandlers();
+  server.resetHandlers();
 });
 afterAll(() => {
-	server.close();
+  server.close();
 });

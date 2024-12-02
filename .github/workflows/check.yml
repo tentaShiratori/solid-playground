@@ -1,0 +1,22 @@
+name: Check Code
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+
+jobs:
+    check:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Set up Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 18
+                  cache: pnpm
+            - run: corepack enable
+            - run: pnpm install
+            - run: pnpm run fmt
+            - run: pnpm depcheck

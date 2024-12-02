@@ -1,0 +1,23 @@
+ignores:
+  [
+    # cli
+    "depcheck",
+    "@graphql-codegen/*",
+    "tsx",
+    # solid
+    "solid-devtools",
+    "@solid-mediakit/forms",
+    # storybook
+    "storybook-solidjs-vite",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/blocks",
+    "@storybook/test",
+    "@chromatic-com/storybook",
+    # vitest
+    "@vitest/coverage-v8",
+    # tailwind
+    "autoprefixer",
+    "postcss",
+  ]
+skip-missing: true
