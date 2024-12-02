@@ -11,12 +11,14 @@ updates:
       interval: "daily"
       timezone: Asia/Tokyo
     groups: 
-      update-types: patch
+      minor-change:
+        update-types: patch
   - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: "weekly"
       timezone: Asia/Tokyo
     groups:
-      patterns:
-        - "*"
+      all-changes:
+        patterns:
+          - "*"
