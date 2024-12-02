@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: "weekly"
       timezone: Asia/Tokyo
+    groups:
+      all:
+        patterns:
+          - "*"
   - package-ecosystem: npm
     directory: "/"
     schedule:
