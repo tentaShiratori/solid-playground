@@ -8,18 +8,13 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: "daily"
-      timezone: Asia/Tokyo
-    groups: 
-      minor-change:
-        update-types: 
-          - patch
-  - package-ecosystem: npm
-    directory: "/"
-    schedule:
       interval: "weekly"
       timezone: Asia/Tokyo
-    groups:
-      all-changes:
-        patterns:
-          - "*"
+    groups: 
+      patch-change:
+        update-types: 
+          - patch
+      large-changes:
+        update-types:
+          - minor
+          - major

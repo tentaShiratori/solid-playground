@@ -8,6 +8,7 @@
     "version": "vinxi version",
     "test": "vitest",
     "coverage": "vitest run --coverage",
+    "check": "biome check",
     "fmt": "biome check --write",
     "gql:client": "graphql-codegen -c ./codegen.client.ts",
     "gql:server": "graphql-codegen -c ./codegen.server.ts",
