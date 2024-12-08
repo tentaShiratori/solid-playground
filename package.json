@@ -36,14 +36,14 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "depcheck": "^1.4.7",
-    "drizzle-orm": "^0.36.4",
+    "drizzle-orm": "^0.37.0",
     "immer": "^10.1.1",
     "msw-storybook-addon": "^2.0.4",
     "solid-js": "^1.9.3",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "valibot": "1.0.0-beta.9",
-    "vinxi": "^0.4.3"
+    "vinxi": "^0.5.1"
   },
   "engines": {
     "node": ">=18"
@@ -69,7 +69,7 @@
     "@vitest/coverage-v8": "^2.1.8",
     "autoprefixer": "^10.4.20",
     "dotenv": "^16.4.5",
-    "drizzle-kit": "^0.28.1",
+    "drizzle-kit": "^0.29.1",
     "graphql": "^16.9.0",
     "jsdom": "^25.0.1",
     "msw": "^2.6.6",
