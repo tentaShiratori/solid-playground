@@ -21,5 +21,10 @@ ignores: [
     # vscode-vitest
     "@babel/preset-typescript",
     "@vanilla-extract/css",
+    # macaron
+    "@macaron-css/core",
+    # other
+    "@solid-mediakit/forms-plugin",
+    "@solid-primitives/graphql",
   ]
 skip-missing: true
