@@ -1,5 +1,4 @@
-ignores:
-  [
+ignores: [
     # cli
     "depcheck",
     "@graphql-codegen/*",
@@ -19,5 +18,8 @@ ignores:
     # tailwind
     "autoprefixer",
     "postcss",
+    # vscode-vitest
+    "@babel/preset-typescript",
+    "@vanilla-extract/css",
   ]
 skip-missing: true
