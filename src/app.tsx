@@ -29,7 +29,6 @@ export default function App() {
   return (
     <UrqlProvider value={urqlClient}>
       <Router
-        preload={false}
         root={(props) => (
           <MetaProvider>
             <Title>SolidStart - Basic</Title>
