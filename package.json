@@ -8,6 +8,7 @@
     "version": "vinxi version",
     "test": "vitest",
     "coverage": "vitest run --coverage",
+    "depcheck": "depcheck",
     "check": "biome check",
     "fmt": "biome check --write",
     "gql:client": "graphql-codegen -c ./codegen.client.ts",
@@ -96,9 +97,7 @@
     "vitest": "^2.1.8"
   },
   "msw": {
-    "workerDirectory": [
-      "public"
-    ]
+    "workerDirectory": ["public"]
   },
   "packageManager": "pnpm@9.14.4"
 }

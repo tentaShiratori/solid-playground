@@ -1,6 +1,6 @@
+import { macaronVitePlugin } from "@macaron-css/vite";
 import { defineConfig } from "@solidjs/start/config";
 import suidPlugin from "@suid/vite-plugin";
-import { macaronVitePlugin } from "@macaron-css/vite";
 // import devtools from "solid-devtools/vite";
 
 export default defineConfig({

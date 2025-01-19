@@ -1,7 +1,7 @@
+import { screen } from "@solidjs/testing-library";
 import userEvent from "@testing-library/user-event";
 import { renderApp } from "~/test/renderApp";
 import { Button } from "./macui";
-import { screen } from "@solidjs/testing-library";
 
 test("click", async () => {
   const onClick = vi.fn();

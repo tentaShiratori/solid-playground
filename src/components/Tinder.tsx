@@ -1,8 +1,8 @@
+import { For, Index, createEffect } from "solid-js";
 // https://codesandbox.io/p/sandbox/to6uf?file=%2Fsrc%2FApp.tsx%3A36%2C83
-import { createSprings, animated, to as interpolate } from "solid-spring";
+import { animated, createSprings, to as interpolate } from "solid-spring";
 import { useDrag } from "~/lib/solid-gesture";
 import styles from "./Tinder.module.css";
-import { createEffect, For, Index } from "solid-js";
 
 const cards = [
   "https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg",
