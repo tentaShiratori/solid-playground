@@ -1,6 +1,7 @@
+import type { StorybookConfig } from "storybook-solidjs-vite";
 import path from "node:path";
-/** @type { import('storybook-solidjs-vite').StorybookConfig } */
-const config = {
+
+const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
     "@storybook/addon-essentials",
@@ -12,12 +13,12 @@ const config = {
     options: {},
   },
   viteFinal: (config) => {
+    config.resolve = config.resolve || {};
     config.resolve.alias = {
       ...config.resolve.alias,
       "~": path.resolve(__dirname, "../src"),
     };
     return config;
   },
-  // staticDirs: ["../public"],
 };
 export default config;

@@ -1,8 +1,8 @@
+import type { Preview } from "storybook-solidjs";
 import { initialize, mswDecorator } from "msw-storybook-addon";
-import { providers } from "~/storybook/decorator/providers";
-
+import { providers } from "../src/storybook/decorator/providers";
 initialize();
-const preview = {
+const preview: Preview = {
   parameters: {
     controls: {
       matchers: {

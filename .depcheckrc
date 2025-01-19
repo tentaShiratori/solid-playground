@@ -23,6 +23,8 @@ ignores: [
     "@vanilla-extract/css",
     # macaron
     "@macaron-css/core",
+    # solid-gesture
+    "@use-gesture/core",
     # other
     "@solid-mediakit/forms-plugin",
     "@solid-primitives/graphql",
