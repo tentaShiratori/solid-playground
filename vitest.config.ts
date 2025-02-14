@@ -1,11 +1,10 @@
 import path from "node:path";
-import { macaronVitePlugin } from "@macaron-css/vite";
 import suidPlugin from "@suid/vite-plugin";
 import solid from "vite-plugin-solid";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  plugins: [solid(), macaronVitePlugin()],
+  plugins: [solid() as never, suidPlugin() as never],
   resolve: {
     conditions: ["development", "browser"],
   },

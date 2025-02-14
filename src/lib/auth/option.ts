@@ -6,7 +6,10 @@ import crypto from "node:crypto";
 if (process.env.NODE_ENV === "development") {
   // authjs内部でcryptoを使っているため、globalに代入する
   // dev server起動中は下記を消しても動くが、dev serverを起動直後は下記がないとエラーが出るので消すな、とにかく消すな
-  global.crypto = crypto as never;
+  Object.defineProperty(global, "crypto", {
+    value: crypto,
+  });
+  // global.crypto = crypto as never;
 }
 
 declare module "@auth/core/jwt" {
