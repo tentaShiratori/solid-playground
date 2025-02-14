@@ -1,4 +1,4 @@
-import { createSignal, Match, Switch } from "solid-js";
+import { Match, Switch, createSignal } from "solid-js";
 
 export const MySwitch = () => {
   const [state] = createSignal<
