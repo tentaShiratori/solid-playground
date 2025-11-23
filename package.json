@@ -24,7 +24,7 @@
     "@auth/solid-start": "^0.15.4",
     "@graphql-tools/graphql-file-loader": "^8.0.19",
     "@graphql-tools/load": "^8.0.12",
-    "@kobalte/core": "^0.13.9",
+    "@kobalte/core": "^0.13.11",
     "@libsql/client": "^0.14.0",
     "@modular-forms/solid": "^0.25.1",
     "@solid-mediakit/forms": "^1.1.3",
@@ -32,7 +32,7 @@
     "@solid-primitives/graphql": "^2.1.0",
     "@solid-primitives/tween": "^1.3.0",
     "@solidjs/meta": "^0.29.4",
-    "@solidjs/router": "^0.15.0",
+    "@solidjs/router": "^0.15.4",
     "@solidjs/start": "^1.1.3",
     "@suid/icons-material": "^0.8.1",
     "@suid/material": "^0.18.0",
@@ -42,15 +42,15 @@
     "depcheck": "^1.4.7",
     "drizzle-orm": "^0.38.3",
     "immer": "^10.1.1",
-    "msw-storybook-addon": "^2.0.4",
+    "msw-storybook-addon": "^2.0.6",
     "solid-gesture": "^0.0.3",
-    "solid-js": "^1.9.6",
+    "solid-js": "^1.9.10",
     "solid-spring": "^0.0.7",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "update": "^0.7.4",
     "valibot": "1.0.0-beta.14",
-    "vinxi": "^0.5.6"
+    "vinxi": "^0.5.8"
   },
   "engines": {
     "node": ">=18"
@@ -75,9 +75,9 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/user-event": "^14.5.2",
     "@use-gesture/core": "^10.3.1",
-    "@vanilla-extract/css": "^1.17.1",
+    "@vanilla-extract/css": "^1.17.4",
     "@vitest/coverage-v8": "^2.1.8",
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.22",
     "dotenv": "^16.4.7",
     "drizzle-kit": "^0.30.4",
     "graphql": "^16.10.0",
@@ -91,7 +91,7 @@
     "tailwindcss": "^3.4.15",
     "tsx": "^4.19.4",
     "typescript": "^5.7.3",
-    "vite-plugin-solid": "^2.11.6",
+    "vite-plugin-solid": "^2.11.10",
     "vitest": "^2.1.8"
   },
   "msw": {
